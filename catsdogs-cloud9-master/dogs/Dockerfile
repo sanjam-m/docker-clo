@@ -3,6 +3,7 @@ EXPOSE 80
 RUN apt-get update -y && \
   apt-get upgrade -y && \
   apt-get install -y curl && \
+  apt-get install -y iputils-ping && \
   cd /tmp && \
   apt-get install awscli -y && \
   rm -rf /tmp/* && \
