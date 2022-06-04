@@ -35,7 +35,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
       run: |
-        cd cats-and-dogs/$REPO/
+        cd catsdogs-cloud9-master/$REPO/
         ls -ltra
         docker build -t $ECR_REGISTRY/$ECR_REPO_PREFIX-$REPO:$IMAGE_TAG .
     
