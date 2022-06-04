@@ -14,7 +14,7 @@ jobs:
         ecr_repo: [cats, dogs]
     
     env:
-      ECR_REPO_PREFIX: assign1-dev
+      ECR_REPO_PREFIX: assignment-dev
       IMAGE_TAG: v0.2
       REPO: ${{ matrix.ecr_repo }}
       
